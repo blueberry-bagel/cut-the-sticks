@@ -70,26 +70,20 @@ void get_print_sticks(int stick[], int nums){
             }
         }
             
-            //for(int i = 0; i < max; i++){
+            
            for(int k = 0; k < nums - 1; k++){
-           //while(s > 0){
-            //while(stick[k] != 0){
            int small = 100;
            
         
         for(int i = 0; i < nums; i++){
             if(stick[i] < small && stick[i] > 0){
                 small = stick[i];
-                //if(stick[i] == 0 || stick[i] < 0){
-                    //i++;
-                //}
             }
         }
         
         if(small == 0 || small == 100){
             return;
         }
-        //cout << "small " << small << endl;
             for(int i = 0; i < nums; i++){
             int var = 0;
             var = stick[i];
@@ -97,18 +91,9 @@ void get_print_sticks(int stick[], int nums){
             stick[i] = var;
            
             if(stick[i] > 0){
-               // stick[i] = var;
                 count++;
             }
-        }// end of loop
-        //print_sticks(stick, nums);//********
-    
-    //for(int i = 0; i < count; i++){// i equals one here notice remove first num in file
-        //cout << endl << stick[i];
-        
-        //if(count == 1 && stick[i] <= 1){
-            //return;
-        //}
+        }
         if(count == 0){
             return;
         }
@@ -116,7 +101,6 @@ void get_print_sticks(int stick[], int nums){
     
     cout << endl;
    count = 0;
-    //}
     
 }
 
